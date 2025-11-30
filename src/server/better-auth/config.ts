@@ -13,8 +13,8 @@ export const auth = betterAuth({
   },
   socialProviders: {
     spotify: {
-      clientId: env.BETTER_AUTH_SPOTIFY_CLIENT_ID as string,
-      clientSecret: env.BETTER_AUTH_SPOTIFY_CLIENT_SECRET as string,
+      clientId: env.SPOTIFY_CLIENT_ID,
+      clientSecret: env.SPOTIFY_CLIENT_SECRET,
       redirectURI: "http://127.0.0.1:3000/api/auth/callback/spotify", //SPOTIFY ONLY LETS YOU DO 127.0.0.1 NOT LOCALHOST
     },
   },

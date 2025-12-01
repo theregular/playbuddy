@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, CardTitle } from "../ui/card";
+import { Card, CardDescription, CardTitle } from "../ui/card";
 import type { Track } from "~/lib/shared/track-types";
 
 export function TrackCard(props: Track) {
@@ -15,7 +15,14 @@ export function TrackCard(props: Track) {
                         height={300}
                     />
                 )}
-            <CardTitle>{props.title}</CardTitle>
+            <div>
+                <CardTitle>{props.title}</CardTitle>
+                <CardDescription>
+                    <p>artist: {props.artist}</p>
+                    <p>dur: {props.duration}</p>
+                    <p>id: {props.id}</p>
+                </CardDescription>
+            </div>
         </Card>
     );
 }

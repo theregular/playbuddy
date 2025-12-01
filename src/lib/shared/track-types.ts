@@ -2,5 +2,6 @@ export type Track = {
     title: string,
     artist: string,
     duration: number,
-    artworkUrl?: string
+    artworkUrl?: string,
+    id: number
 }

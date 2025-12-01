@@ -8,5 +8,5 @@ export default {
   dbCredentials: {
     url: env.DATABASE_URL,
   },
-  tablesFilter: ["playbuddy_*"],
+  tablesFilter: ["oneplaylist_*"],
 } satisfies Config;

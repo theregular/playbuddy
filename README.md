@@ -1,4 +1,4 @@
-# PlayBuddy
+# OnePlaylist
 
 ## Tech
 
